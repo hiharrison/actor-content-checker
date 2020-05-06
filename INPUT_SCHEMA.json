@@ -2,7 +2,11 @@
     "title": "Content checker input",
     "type": "object",
     "schemaVersion": 1,
-    "required": ["url", "contentSelector", "sendNotificationTo"],
+    "required": [
+        "url",
+        "contentSelector",
+        "sendNotificationTo"
+    ],
     "properties": {
         "url": {
             "title": "URL to check",
@@ -31,6 +35,12 @@
             "description": "Email address where you want to get notification",
             "editor": "textfield",
             "prefill": "info@apify.com"
+        },
+        "sendNotificationText": {
+            "title": "Notification Text",
+            "type": "string",
+            "description": "Optional text to include in the email notification.",
+            "editor": "textfield"
         }
     }
 }
